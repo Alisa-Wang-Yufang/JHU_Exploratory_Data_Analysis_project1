@@ -2,7 +2,6 @@
 # open device
 png(filename = './plot4.png', width = 480, height = 480, units='px')
 # plot figure
-Sys.setlocale(category = "LC_ALL", locale = "english")
 par(mfrow = c(2, 2))
 plot(consumption$DateTime, consumption$Global_active_power, xlab = '', ylab = 'Global Active Power (kilowatt)', type = 'l')
 plot(consumption$DateTime, consumption$Voltage, xlab = 'datetime', ylab = 'Voltage', type = 'l')
