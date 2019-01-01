@@ -1,7 +1,7 @@
 # Plot 2
 # convert data and time to specific format
 consumption$Date <- as.Date(consumption$Date, format = '%d/%m/%Y')
-consumption$DateTime <- as.POSIXct(paste(consumption$Date, consumption$Time))
+consumption$DateTime <- strptime(paste(consumption$Date, consumption$Time),"%Y-%m-%d %H:%M:%S")
 # open device
 png(filename = './plot20.png', width = 480, height = 480, units='px')
 # plot figure
