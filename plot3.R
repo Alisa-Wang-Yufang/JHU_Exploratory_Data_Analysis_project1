@@ -2,7 +2,6 @@
 # open device
 png(filename = './plot3.png', width = 480, height = 480, units='px')
 # plot figure
-Sys.setlocale(category = "LC_ALL", locale = "english")
 plot(consumption$DateTime, consumption$Sub_metering_1, xlab = '', ylab = 'Energy sub metering', type = 'l')
 lines(consumption$DateTime, consumption$Sub_metering_2, col = 'red')
 lines(consumption$DateTime, consumption$Sub_metering_3, col = 'blue')
